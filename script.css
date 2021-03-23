@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left{
+    display: flex;
+}
+
+a{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    margin: 5px 5px;
+}
+
+#right{
+    display: flex;
+    justify-content: flex-end;
+}
