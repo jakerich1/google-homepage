@@ -4,31 +4,79 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Google Homepage</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="script.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav>
-            <div id="left">
-                <a>About</a>
-                <a>Store</a>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Google Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="script.css">
+</head>
+
+<body>
+    <nav>
+        <div id="left">
+            <a class="standardLink" href="#">About</a>
+            <a class="standardLink" href="#">Store</a>
+        </div>
+        <div id="right">
+            <a class="standardLink" href="#">Gmail</a>
+            <a class="standardLink" href="#">Images</a>
+            <div class="dots">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="5" cy="5" r="1"></circle>
+                    <circle cx="12" cy="5" r="1"></circle>
+                    <circle cx="19" cy="5" r="1"></circle>
+                    <circle cx="5" cy="12" r="1"></circle>
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <circle cx="19" cy="12" r="1"></circle>
+                    <circle cx="5" cy="19" r="1"></circle>
+                    <circle cx="12" cy="19" r="1"></circle>
+                    <circle cx="19" cy="19" r="1"></circle>
+                </svg>
             </div>
-            <div id="right">
-                <a>Gmail</a>
-                <a>Images</a>
+            <div class="profile">J</div>
+        </div>
+    </nav>
+    <main>
+        <img src="images/logo.png">
+        <div class="searchWrapper">
+            <div class="searchIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="10" cy="10" r="7"></circle>
+                    <line x1="21" y1="21" x2="15" y2="15"></line>
+                 </svg>
             </div>
-        </nav>
-        <main></main>
-        <footer></footer>
-        
-        <script src="" async defer></script>
-    </body>
+            <input type="text">
+            <div class="mic">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-microphone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <rect x="9" y="2" width="6" height="11" rx="3"></rect>
+                    <path d="M5 10a7 7 0 0 0 14 0"></path>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                 </svg>
+            </div>
+        </div>
+        <div class="btnGroup">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </main>
+    <footer>
+        <div class="fHead">United Kingdom</div>
+        <div class="fDetail"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 21c.5 -4.5 2.5 -8 7 -10"></path>
+            <path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z"></path>
+         </svg> Carbon neutral since 2007</div>
+    </footer>
+
+</body>
+
 </html>

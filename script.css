@@ -1,19 +1,194 @@
-nav{
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
-#left{
+#left {
     display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
-a{
+a {
     font-size: 14px;
-    font-family: arial,sans-serif;
-    margin: 5px 5px;
+    font-family: arial, sans-serif;
+    margin: 5px 14px 5px 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: 1px solid rgba(255, 255, 255);
 }
 
-#right{
+.standardLink:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+#right {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: rgb(95, 99, 104);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: purple;
+    font-size: 16px;
+    color: white;
+    border-radius: 50%;
+    font-family: arial, sans-serif;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.profile:hover {
+    border: 3px solid rgb(216, 216, 216);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 92px;
+    width: 272px;
+    margin: auto;
+}
+
+.searchWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 584px;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 8px 15px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 90px;
+}
+
+.searchWrapper:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: #dfe1e500;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+
+.searchIcon svg {
+    height: 20px;
+    color: rgb(155, 155, 155);
+}
+
+input[type=text] {
+    width: 100%;
+    font-size: 18px;
+    padding: 4px;
+    border: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.mic svg {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    color: #4285F4;
+    cursor: pointer;
+}
+
+.btnGroup {
+    margin: auto;
+    padding-top: 18px;
+}
+
+.btnGroup button {
+    margin: 11px 4px;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgb(60, 64, 67);
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(248, 249, 250);
+    border-radius: 3px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.btnGroup button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.btnGroup button:focus {
+    outline: none;
+    border: 1px solid #4285F4;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.54);
+    background-color: rgb(242, 242, 242);
+    font-family: arial, sans-serif;
+    font-size: 15px;
+}
+
+.fHead {
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(218, 220, 224);
+}
+
+.fDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 14px;
 }
